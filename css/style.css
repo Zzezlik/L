@@ -4,6 +4,7 @@
 
 :root {
   --font-roboto: "Roboto Condensed", sans-serif;
+  --font-ps2p: "Press Start 2P", system-ui;
   --bg-site: #0a0b15;
 }
 
@@ -13,4 +14,16 @@ body {
 }
 header {
   font-family: var(--font-roboto);
+}
+h1,
+h2 {
+  font-family: var(--font-ps2p);
+}
+
+body > h1 {
+  font-size: 44px;
+}
+
+body > h2 {
+  font-size: 20px;
 }
