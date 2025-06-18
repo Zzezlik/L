@@ -1,0 +1,24 @@
+* {
+  text-decoration: none;
+  color: white;
+}
+
+header > img {
+  width: 34px;
+  height: 62px;
+}
+
+header {
+  display: flex;
+  margin: 60px auto;
+  /* justify-content: space-around; */
+  gap: 35%;
+}
+
+header > * {
+  align-content: center;
+}
+
+header > section > * {
+  margin: auto 40px;
+}

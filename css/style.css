@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+}
+
+:root {
+  --font-roboto: "Roboto Condensed", sans-serif;
+  --bg-site: #0a0b15;
+}
+
+body {
+  background-color: var(--bg-site);
+  margin-left: 100px;
+}
+header {
+  font-family: var(--font-roboto);
+}
