@@ -12,13 +12,13 @@ header {
   display: flex;
   margin: 60px auto;
   /* justify-content: space-around; */
-  gap: 35%;
+  gap: 30%;
 }
 
 header > * {
   align-content: center;
 }
 
-header > section > * {
+.nav > * {
   margin: auto 40px;
 }

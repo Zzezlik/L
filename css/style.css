@@ -10,14 +10,32 @@
 
 body {
   background-color: var(--bg-site);
-  margin-left: 100px;
+  overflow-x: hidden;
 }
-.roboto {
+
+body > header {
+  padding-left: 100px;
+}
+
+body > section,
+body > main {
+  padding-left: 100px;
+}
+
+header .roboto {
   font-family: var(--font-roboto);
 }
 
 .ps2p {
   font-family: var(--font-ps2p);
+}
+
+.ps2p > h1 {
+  font-size: 44px;
+}
+
+.ps2p > h2 {
+  font-size: 20px;
 }
 
 body > h1 {
@@ -26,4 +44,8 @@ body > h1 {
 
 body > h2 {
   font-size: 20px;
+}
+
+.title {
+  padding: auto auto 70px auto;
 }

@@ -1,0 +1,26 @@
+.carousel {
+  width: 100vw;
+  overflow: hidden;
+
+  margin: 0;
+  padding: 0;
+}
+
+.carousel > article {
+  display: inline-flex;
+  animation: carousel 1s linear infinite;
+  width: 100%;
+}
+
+.carousel > article > img {
+  height: 245px;
+}
+
+@keyframes carousel {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-55%);
+  }
+}
