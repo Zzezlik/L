@@ -12,11 +12,11 @@ body {
   background-color: var(--bg-site);
   margin-left: 100px;
 }
-header {
+.roboto {
   font-family: var(--font-roboto);
 }
-h1,
-h2 {
+
+.ps2p {
   font-family: var(--font-ps2p);
 }
 
