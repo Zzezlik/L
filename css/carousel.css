@@ -8,12 +8,16 @@
 
 .carousel > article {
   display: inline-flex;
-  animation: carousel 1s linear infinite;
+  animation: carousel 10s linear infinite;
   width: 100%;
 }
 
+:root {
+  --img-width: 245px;
+}
+
 .carousel > article > img {
-  height: 245px;
+  height: var(--img-width);
 }
 
 @keyframes carousel {
@@ -21,6 +25,6 @@
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-55%);
+    transform: translateX(calc(-5 * var(--img-width)));
   }
 }
