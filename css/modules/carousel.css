@@ -1,19 +1,18 @@
+@import "../style.css";
+
 .carousel {
   width: 100vw;
   overflow: hidden;
 
   margin: 0;
-  padding: 0;
+  padding: 0 0 20px 0;
 }
 
 .carousel > article {
   display: inline-flex;
   animation: carousel 10s linear infinite;
-  width: 100%;
-}
-
-:root {
-  --img-width: 245px;
+  width: 100vw;
+  white-space: nowrap;
 }
 
 .carousel > article > img {
@@ -21,10 +20,10 @@
 }
 
 @keyframes carousel {
-  0% {
+  from {
     transform: translateX(0%);
   }
-  100% {
+  to {
     transform: translateX(calc(-5 * var(--img-width)));
   }
 }

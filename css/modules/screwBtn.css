@@ -1,0 +1,56 @@
+@import "../style.css";
+
+.btn-skrew {
+  --btn-cut: 28px;
+  --btn-border: 4px;
+  --btn-border-color: #0a36c5;
+  --btn-color: #fff;
+
+  position: relative;
+  display: inline-block;
+  padding: 1.9rem 2.8rem;
+  font-family: var(--font-ps2p);
+  font-size: 1.2rem;
+  color: var(--btn-color);
+  background: var(--btn-border-color);
+  border: none;
+  cursor: pointer;
+
+  margin-bottom: 170px;
+
+  clip-path: polygon(
+    0% 0%,
+    calc(100% - var(--btn-cut)) 0%,
+    100% var(--btn-cut),
+    100% 100%,
+    var(--btn-cut) 100%,
+    0% calc(100% - var(--btn-cut))
+  );
+}
+
+.btn-skrew::before {
+  content: "";
+  position: absolute;
+  top: var(--btn-border);
+  right: var(--btn-border);
+  bottom: var(--btn-border);
+  left: var(--btn-border);
+  background: var(--dark-blue);
+
+  --inner-cut: calc(var(--btn-cut) - var(--btn-border));
+
+  clip-path: polygon(
+    0% 0%,
+    calc(100% - var(--inner-cut)) 0%,
+    100% var(--inner-cut),
+    100% 100%,
+    var(--inner-cut) 100%,
+    0% calc(100% - var(--inner-cut))
+  );
+  z-index: 0;
+}
+
+.btn-skrew > span {
+  position: relative;
+  z-index: 1;
+}

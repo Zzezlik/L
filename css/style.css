@@ -1,11 +1,22 @@
-* {
+*,
+*::before,
+*::after {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
 }
 
 :root {
   --font-roboto: "Roboto Condensed", sans-serif;
   --font-ps2p: "Press Start 2P", system-ui;
+  --dark-blue: #0a36c5;
   --bg-site: #0a0b15;
+
+  --img-width: 245px;
 }
 
 body {
@@ -13,39 +24,22 @@ body {
   overflow-x: hidden;
 }
 
-body > header {
-  padding-left: 100px;
-}
-
+body > header,
 body > section,
-body > main {
+main > section {
   padding-left: 100px;
-}
-
-header .roboto {
-  font-family: var(--font-roboto);
-}
-
-.ps2p {
-  font-family: var(--font-ps2p);
-}
-
-.ps2p > h1 {
-  font-size: 44px;
-}
-
-.ps2p > h2 {
-  font-size: 20px;
-}
-
-body > h1 {
-  font-size: 44px;
-}
-
-body > h2 {
-  font-size: 20px;
 }
 
 .title {
-  padding-bottom: 70px;
+  padding-bottom: 4.4rem;
+  font-family: var(--font-ps2p);
+  /* ~70px */
+}
+
+.title > h1 {
+  font-size: 44px;
+}
+
+.title > h2 {
+  font-size: 20px;
 }
